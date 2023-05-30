@@ -15,7 +15,7 @@ public class UserRestExceptionHandler {
 		UserErrorResponse error = new UserErrorResponse();
 		error.setStatus(HttpStatus.NOT_FOUND.value());
 		error.setMessage(excep.getMessage());
-		error.setTimeStamp(System.currentTimeMillis());
+		error.setTimeStamp(System.currentTimeMillis());  
 		//return ResponseEntity
 		return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
 	}
@@ -29,6 +29,7 @@ public class UserRestExceptionHandler {
 	   userError.setTimeStamp(System.currentTimeMillis());
 	   return new ResponseEntity<>(userError, HttpStatus.NOT_FOUND);
    }
+   
 	//Another Exception Handler to catch any exception
 	@ExceptionHandler
 	public ResponseEntity<UserErrorResponse>handleException(Exception exp){

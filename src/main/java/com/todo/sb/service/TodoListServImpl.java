@@ -66,11 +66,4 @@ public class TodoListServImpl implements TodoListService {
 		todoListRepository.deleteById(id);
 	}
 
-	
-
-	
-	
-	
-	
-
 }

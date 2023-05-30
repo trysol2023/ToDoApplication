@@ -24,7 +24,7 @@ import com.todo.sb.service.TodoListService;
 
 @RestController
 @RequestMapping("/TodoList")
-public class TodoListController {
+public class TodoListController{
   
 	@Autowired
 	private TodoListService todoListService;
